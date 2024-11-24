@@ -1,0 +1,682 @@
+body {
+   box-sizing: border-box;
+   background-color: whitesmoke;
+ /* overflow: hidden; */
+
+}
+* {
+    box-sizing: border-box;
+
+}
+
+
+.popup2 {
+    width: 260px;
+    height: 260px;
+    background-color: white;
+    position: absolute;
+    right: 17px;top: 35px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.lock {
+    width: 25px;
+    position: absolute;
+    left: 8px;top: 8px;
+}
+.logout {
+    width: 150px;
+}
+.logout img {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.popup2 button {
+    width: 130px;
+    height: 45px;
+    background-color:red ;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-weight: 700;
+}
+
+.content {
+    /* max-width:calc(100% - 100px); */
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 180px;
+    left: 200px;
+  ;
+}
+.content .right{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    height: 100%;
+}
+
+.content .left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+
+.popup  { 
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.66);
+    text-align: center;
+}
+.popupDiv {
+    width: 340px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    display:flex ;
+    flex-direction: column;
+    padding: 20px;
+   justify-content: center;
+}
+.popup2Div {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: center;
+    line-height: 0px;
+    gap: 32px;
+}
+.popupDiv input {
+    border: 1px solid grey;
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.popupDiv select {
+    width: 40%;
+    height: 30px;
+    position: relative;
+    left: 170px;bottom: 45px;
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    color: white;
+   
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 27px;
+}
+.med {
+    width: 40px;
+}
+.header .med {
+    display:none ;
+}
+
+.nav {
+    padding: 10px;
+    width: 90px;
+    height:100%;
+    background-color: rgb(22, 80, 96);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0px;
+    position: fixed;
+    left: 0px;
+}
+
+.header {
+    width: calc(100% - 90px);
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: sans-serif;
+  
+}
+.header div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    left: 160px;
+    top: 50px;
+}
+
+.task1 {
+    width: 360px;
+    height: 330px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+}
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+h3 {
+  max-width: 155px;
+    line-height: 37px; 
+    font-family: sans-serif;  
+}
+
+.task2 h3 {
+    position: absolute;
+    top: 0px;
+    font-family: sans-serif;
+   
+}
+label {
+width: 120px;
+height: 50px;
+background-color:rgb(76, 210, 165);
+border-radius: 10px;
+font-family: sans-serif;
+color: white;
+text-align: center;
+line-height: 50px;
+position: absolute;bottom: 30px;
+}
+
+.task2 {
+    width: 360px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    line-height: 0px;
+    padding: 20px;
+    margin-bottom:90px ;
+    position: relative;
+  
+}
+.task2 .icon{
+    position: absolute;
+    top:9px ;right: 9px;
+}
+
+tr {
+    display: flex;
+    gap: 40px;
+   position: relative;
+   top: 15px;
+}
+
+.key {
+width: 100px;
+font-weight: 700;
+font-family: sans-serif;
+}
+.value {
+font-weight: 100;
+color: rgba(0, 0, 0, 0.545);
+}
+h5 {
+    font-size: 13;
+    font-family: sans-serif;
+}
+
+
+.add {
+    width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0px;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.pre {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    border: 2px dashed rgb(61, 189, 61);
+    color: rgb(76, 210, 165);
+    text-align: center;
+    border-radius: 10px;
+    line-height: 50px;
+    font-weight: 700;
+    font-family: sans-serif;
+    position: relative;bottom:20px ;
+}
+.Test {
+    /* width: 100%; */
+    height: 200px;
+    display: flex;
+
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.tests {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    justify-content: space-evenly;
+
+}
+.Test h1 {
+    font-family: sans-serif;
+    font-weight: 400;
+    font: size 20px; ;
+    text-align: start;
+    position: relative;left: 20px ;
+}
+.cards {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    justify-content: space-between;
+   
+}
+.card {
+    background-color: white;
+    width: 30%;
+    height: 180px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 5px;
+
+}
+
+  @media screen and ( max-width:1260px) and (min-width:900px) {  
+    .nav {
+        position:  fixed;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        z-index: 1;
+        justify-content: space-evenly;
+        border: none;
+        padding: 0px;
+        
+    } 
+    .nav .med {
+        display: none;
+    }
+    .header .med {
+        display: block;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+label {
+    position: absolute;
+    bottom: 127px;
+}
+
+    .task1 {
+        height: 450px;
+        justify-content:  flex-start;
+        
+    } 
+tr {
+    gap: 70px;
+}
+.content .left {
+    width: 800px;
+    display: flex;
+    flex-direction: row;justify-content: space-between;
+
+}
+.header h1 {
+    left: 100px;
+}
+.content {
+    position: absolute;left: 90px;
+}
+} 
+
+
+
+ @media screen and (max-width:900px) and (min-width:660px) {
+    .nav {
+        position:  fixed;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        z-index: 1;
+        justify-content: space-evenly;
+        border: none;
+        padding: 0px;
+        
+    } 
+  
+ .content {
+    width: 700px;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 40px;
+ }
+ .nav .med {
+    display: none;
+}
+.header .med {
+    display: block;
+}
+
+label {
+position: absolute;
+bottom: 127px;
+}
+
+.task1 {
+    height: 450px;
+    justify-content:  flex-start;
+    
+} 
+tr {
+gap: 70px;
+}
+.content .left {
+width: 700px;
+display: flex;
+flex-direction: row;justify-content: space-between;
+
+}
+.header h1 {
+left: 50px;
+}
+.content .right {
+    width: 700px;
+}
+.right div {
+    width: 700px;  
+}
+.add .pre {
+    width: 640px;
+}
+.cards .card {
+    width: 200px;
+}
+.add div {
+    width: 50%;
+}
+
+} 
+
+@media screen and (max-width:660px) and (min-width:400px) {
+     .nav {
+        position:  fixed;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        z-index: 1;
+        justify-content: space-evenly;
+        border: none;
+        padding: 0px;
+        
+    } 
+  
+ .content {
+    width: 500px;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 40px;
+ }
+ .nav .med {
+    display: none;
+}
+.header .med {
+    display: block;
+}
+
+label {
+position: absolute;
+bottom: 127px;
+}
+
+.task1 {
+    height: 450px;
+    justify-content:  flex-start;
+    
+} 
+tr {
+gap: 70px;
+}
+.content .left {
+width: 500px;
+display: flex;
+justify-content: space-between;
+
+}
+.header h1 {
+    position: absolute;
+left: 0px;width: 300px;
+}
+.content .right {
+    width: 500px;
+}
+
+
+.cards {
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+.add div {
+    width: 50%;
+}
+.Test {
+height: 380px;
+    width: 400px;
+    position: relative;
+
+}
+.tests{
+    display: flex;
+flex-direction: column;
+position: relative;top: 15px;left: 45px;
+}
+.cards .card {
+    width: 240px;
+
+}
+.Test h1 {
+    position: absolute;top: 0px;
+}
+
+} 
+
+@media screen and (max-width:660px) {
+    .nav {
+       position:  fixed;
+       bottom: 0px;
+       right: 0px;
+       left: 0px;
+       width: 100%;
+       height: 70px;
+       display: flex;
+       flex-direction: row;
+       background-color: white;
+       z-index: 1;
+       justify-content: space-evenly;
+       border: none;
+       padding: 0px;
+       
+   } 
+ 
+.content {
+   position: absolute;
+   left: 40px;
+}
+.nav .med {
+   display: none;
+}
+.header .med {
+   display: block;
+}
+
+label {
+position: absolute;
+bottom: 127px;
+}
+
+.task1 {
+   height: 450px;
+   justify-content:  flex-start;
+   
+} 
+tr {
+gap: 70px;
+}
+.content .left {
+width: 300px;
+display: flex;
+justify-content: space-between;
+
+}
+.header h1 {
+   position: absolute;
+left: 0px;width: 300px;
+}
+.content .right {
+   width: 500px;
+   flex-direction: column;
+
+}
+
+.add .pre {
+   width: 320px;
+}
+.cards {
+flex-direction:column ;
+gap: 20px;
+justify-content: center;
+}
+.Test {
+   height: 400px;
+   width: 350px;
+   position: relative;
+
+}
+.tests{
+   display: flex;
+flex-direction: column;
+position: relative;top: 15px;left: 45px;
+}
+.cards .card {
+   width: 350px;
+
+}
+.Test h1 {
+   position: absolute;top: 0px;
+}
+.add {
+    width: 360px;
+    height: 450px;
+    
+    }
+} 
+
+
+
+
+.item {
+    display: flex;
+    flex-direction: row
+    ;width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+td {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.item img {
+    height: 30px;
+}
+.tr {
+    height: 60px;
+}
+ .tr:nth-last-of-type(odd) {
+    background-color: grey;
+}
+.tr:nth-last-of-type(even) {
+    background-color: lightgray;
+}
+
+/* .container {
+    position: absolute;top: 0px;
+} */

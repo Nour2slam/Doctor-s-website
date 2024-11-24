@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+        background-color: darkcyan;
+        display: flex;
+        align-items: center;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .container {
+        box-sizing:border-box ;
+        margin: 40px;
+        background-color: white;
+        height: 600px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        border-radius: 8px;
+    }
+    .container2 {
+        width: 430px;
+        height: 450px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        border-radius: 8px;  
+    }
+    input {
+        display: block;
+        margin: 30px;
+        width: 90%;
+        height: 50px;
+        padding: 10px;
+    }
+    h1 {
+       text-align: center;
+       font-family: sans-serif;
+    }
+    button {
+        width: 90%;
+        height: 40px;
+        color: white;
+        background-color: rgb(15, 167, 167);
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+  p {
+   font-family: sans-serif;
+}
+span {
+    color: rgb(31, 190, 190);
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+<div><h1>Create Account</h1></div>
+<div>
+    <input type="text" placeholder="User name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <input type="password" placeholder="Confirm password">
+    <button>Sign Up</button>
+    <p>Already have an account?<span>Login</span> </p>
+</div>
+  </div>  
+  <div class="container2">
+    <div><h1>Login</h1></div>
+    <div>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+        <p>Donot have an account?<span>Sign in</span> </p>
+    </div>
+      </div>  
+</body>
+</html>
